@@ -57,11 +57,11 @@
     }
   },
   "lint-staged": {
-    "packages/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write --loglevel warn"
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "prettier --write --loglevel warn",
+      "eslint --fix"
     ],
-    "packages/**/*.{less,postcss,css,scss}": [
+    "src/**/*.{less,postcss,css,scss}": [
       "stylelint --fix --custom-syntax postcss-less --cache --cache-location node_modules/.cache/stylelint/"
     ]
   }
